@@ -1,0 +1,10 @@
+{
+  "name": "planx-maps",
+  "private": true,
+  "author": "John Rees <john@opensystemslab.io>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
