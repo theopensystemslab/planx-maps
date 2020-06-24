@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt install gdal-bin -y;
-mkdir geojsons;
+mkdir -p geojsons;
 cd gmls;
 wget https://raw.githubusercontent.com/johnrees/Land-Registry-INSPIRE-Index-Polygons-tools/master/Land_Registry_Cadastral_Parcels.gfs;
 export GML_GFS_TEMPLATE=Land_Registry_Cadastral_Parcels.gfs;
