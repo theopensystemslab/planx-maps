@@ -25,3 +25,9 @@ Convert all of `.gml` files into `.geojson` files, using the WGS84 Coordinate sy
 `./src/convert`
 
 Now, either convert all of the `.geojson` files into individual `.mbtiles` files using `./src/tiles` OR combine them all into a single `.mbtiles` file (this will probably take forever and eventually crash out of the process) `cd geojsons && tippecanoe -zg -o inspire-polygons.mbtiles -l inspire-polygons --coalesce-densest-as-needed --extend-zooms-if-still-dropping *.geojson`
+
+---
+
+### Importing Data into PostGIS
+
+Ensure you have a `./gmls` directory, edit the db connection vars in the file and then run `./src/import`
